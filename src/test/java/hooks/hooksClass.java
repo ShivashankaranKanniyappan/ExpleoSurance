@@ -13,7 +13,6 @@ public class hooksClass extends drivers {
 		driver = new ChromeDriver();
 		driver.get("http://192.168.99.141:3000/");
 		driver.manage().window().maximize();
-
 	}
 	
 	@After

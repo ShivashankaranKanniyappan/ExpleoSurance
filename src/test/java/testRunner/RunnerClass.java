@@ -11,6 +11,7 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 				plugin = {"pretty", "html:target/reports.html"},
 				dryRun = false
 				)
+
 public class RunnerClass extends AbstractTestNGCucumberTests{
 
 	
