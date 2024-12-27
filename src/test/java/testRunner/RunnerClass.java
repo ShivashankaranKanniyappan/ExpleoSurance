@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(
-				features = "src\\test\\resources\\addNewInsurace.feature", 
+				features = "src\\test\\resources\\deleteInsurance.feature", 
 				glue = {"stepDefinition", "hooks"},
 				snippets = SnippetType.CAMELCASE, 
 				plugin = {"pretty", "html:target/reports.html"},

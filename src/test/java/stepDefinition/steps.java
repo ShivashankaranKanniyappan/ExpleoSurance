@@ -30,10 +30,6 @@ public class steps extends drivers {
 		Thread.sleep(5000);
 	}
 
-	//	@Then("Login Should be successful")
-	//	public void loginShouldBeSuccessful() {
-	//		driver.findElement(By.xpath("//button[text()='Logout']")).click();
-	//	}
 
 	// ============INVALID CREDEMTIALS=================================== //
 
