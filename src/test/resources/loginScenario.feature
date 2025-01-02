@@ -1,8 +1,5 @@
 Feature: Validating Login credentials for ExpleoSurance
 
-  Background: 
-    Given User should be in login Page
-
   Scenario: Validation of Login using valid credentials
     When User Enter Username and Password
     And User should click the LoginButton
