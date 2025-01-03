@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 				snippets = SnippetType.CAMELCASE, 
 				plugin = {"pretty", "json:target/cucumber.json", 
 									"html:target/htmlreport.html"},
-				dryRun = false
+				dryRun = true
 				)
 public class RunnerClass extends AbstractTestNGCucumberTests 
 {
