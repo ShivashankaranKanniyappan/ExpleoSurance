@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 				features = "src\\test\\resources\\loginScenario.feature", 
 				glue = {"stepDefinition", "hooks"}, 
 				snippets = SnippetType.CAMELCASE, 
-				plugin = {"pretty", "json:target/cucumber.json", 
-									"html:target/htmlreport.html"},
+				plugin = {"pretty", "json:target\\cucumber.json", 
+									"html:target\\htmlreport.html"},
 				dryRun = true
 				)
 public class RunnerClass extends AbstractTestNGCucumberTests 
