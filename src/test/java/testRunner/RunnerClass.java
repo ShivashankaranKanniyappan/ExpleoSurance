@@ -1,22 +1,17 @@
 package testRunner;
 
-import org.junit.runner.RunWith;
-
-import io.cucumber.junit.Cucumber;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
-@RunWith(Cucumber.class)
-@io.cucumber.junit.CucumberOptions(
+@CucumberOptions(
 				features = "src\\test\\resources\\loginScenario.feature", 
-								glue = {"stepDefinition", "hooks"},
-//				snippets = SnippetType.CAMELCASE, 
-				plugin = {"pretty", "html:target/reports.html"},
+				glue = {"stepDefinition", "hooks"}, 
+				snippets = SnippetType.CAMELCASE, 
+				plugin = {"pretty", "json:target/cucumber.json"},
 				dryRun = false
 				)
-
-public class RunnerClass  //extends AbstractTestNGCucumberTests // 
+public class RunnerClass extends AbstractTestNGCucumberTests 
 {
 
 	
