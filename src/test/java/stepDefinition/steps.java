@@ -21,7 +21,7 @@ public class steps extends drivers {
 
 	@Given("User should be in login Page")
 	public void userShouldBeInLoginPage() throws InterruptedException {
-		
+
 		WebElement username = driver.findElement(By.xpath("//input[@placeholder='Email Address']"));
 		username.sendKeys("shivashankaran.kanniyappan@expleogroup.com");
 		WebElement password = driver.findElement(By.xpath("//input[@placeholder='Password']"));
@@ -60,7 +60,7 @@ public class steps extends drivers {
 		select.selectByIndex(3);
 		driver.findElement(By.id("Premium")).sendKeys(Premium);
 	}
-	
+
 	@When("User click the Submit button")
 	public void user_click_the_submit_button() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -74,5 +74,5 @@ public class steps extends drivers {
 		System.out.println("Insurance Created Successfully");
 	}
 
-		
+
 }

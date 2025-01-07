@@ -4,8 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
-@CucumberOptions(
-				features = {"src\\test\\resources\\feature1_login.feature", 
+@CucumberOptions(features = {"src\\test\\resources\\feature1_login.feature", 
 						"src\\test\\resources\\feature2_addInsurance.feature"}, 
 				glue = {"stepDefinition", "hooks"}, 
 				snippets = SnippetType.CAMELCASE, 
@@ -15,6 +14,7 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 				)
 public class RunnerClass extends AbstractTestNGCucumberTests 
 {
-	
+
+
 	
 }
