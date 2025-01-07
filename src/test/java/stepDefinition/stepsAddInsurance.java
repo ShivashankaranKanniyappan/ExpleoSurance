@@ -16,7 +16,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class steps extends drivers {
+public class stepsAddInsurance extends drivers {
 
 
 	@Given("User should be in login Page")

@@ -2,28 +2,26 @@ package stepDefinition;
 
 import java.util.List;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class deleteSteps extends drivers {
+public class deleteMultiple extends drivers{
 
-	@Given("User should be logged in successfully")
-	public void user_should_be_logged_in_successfully() throws InterruptedException {
-
+	@Given("User should be in login page")
+	public void userShouldBeInLoginPage() throws InterruptedException {
 		WebElement username = driver.findElement(By.xpath("//input[@placeholder='Email Address']"));
 		username.sendKeys("shivashankaran.kanniyappan@expleogroup.com");
 		WebElement password = driver.findElement(By.xpath("//input[@placeholder='Password']"));
 		password.sendKeys("Shiva@1919");
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(2000);    
 	}
 
-	@When("User clicks the delete button")
-	public void user_clicks_the_delete_button() {
+	@When("User delete the selected policy details")
+	public void userDeleteTheSelectedPolicyDetails() {
 		WebElement table = driver.findElement(By.xpath("//div[@class='insuranceTable']"));
 		List<WebElement> headers = table.findElements(By.tagName("th"));
 		for (WebElement header : headers) 
@@ -54,16 +52,17 @@ public class deleteSteps extends drivers {
 				delete.click();
 			}
 		}
+
+	}
+	@When("The policy should be deleted")
+	public void thePolicyShouldBeDeleted() {
+			
+
+	}
+	@Then("Validate Dashboard page")
+	public void validateDashboardPage() {
+
+
 	}
 
-	@And("User clicks the Yes or No")
-	public void user_clicks_the_yes_or_no() {
-		WebElement confirm = driver.findElement(By.xpath("//button[normalize-space()='Yes']"));
-		confirm.click();
-	}
-
-	@Then("Insurance entry should be deleted in the dashboard page")
-	public void insurance_entry_should_be_deleted_in_the_dashboard_page() {
-		System.out.println("Policy Deleted");
-	}
 }
