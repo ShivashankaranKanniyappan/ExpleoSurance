@@ -10,9 +10,9 @@ Feature: Register New User
 
     Examples: 
       | Email           | Password | ConfirmPassword |
-      | test11@test.com | tester@1 | tester@1        |
-      | test12@test.com | tester@2 | tester@2        |
-      | test13@test.com | tester@3 | tester@2        |
+      | test21@test.com | tester@1 | tester@1        |
+      | test22@test.com | tester@2 | tester@2        |
+      | test23@test.com | tester@3 | tester@2        |
 
   @registeredUser
   Scenario Outline: Validating Registered Users
@@ -22,6 +22,6 @@ Feature: Register New User
 
     Examples: 
       | Username        | Password |
-      | test11@test.com | tester@1 |
-      | test12@test.com | tester@2 |
-      | test13@test.com | tester@3 |
+      | test21@test.com | tester@1 |
+      | test22@test.com | tester@2 |
+      | test23@test.com | tester@3 |
