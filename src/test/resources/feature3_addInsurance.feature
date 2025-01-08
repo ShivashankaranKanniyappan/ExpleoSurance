@@ -1,3 +1,4 @@
+@All_Scenarios
 Feature: Validation of New Insurace Details
 
   Scenario Outline: Validation of Adding New Insurance

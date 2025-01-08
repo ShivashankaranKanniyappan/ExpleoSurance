@@ -1,3 +1,4 @@
+@All_Scenarios
 Feature: Validation of deleting Existing insurance
 
   Scenario: Validation of deleting insurance details in dashboard

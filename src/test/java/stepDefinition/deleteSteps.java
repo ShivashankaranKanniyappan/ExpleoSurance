@@ -48,7 +48,7 @@ public class deleteSteps extends drivers {
 			String text = policyID.getText();
 			System.out.println(text);
 			
-			if(text.equals("677cde82fd02909d90256d62"))
+			if(text.equals("677ca2a2fd02909d90256c22"))
 			{
 				WebElement delete = secondRow.get(7).findElement(By.tagName("button"));
 				delete.click();
