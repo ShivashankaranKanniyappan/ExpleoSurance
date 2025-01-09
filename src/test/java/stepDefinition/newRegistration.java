@@ -1,5 +1,7 @@
 package stepDefinition;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -47,4 +49,7 @@ public class newRegistration extends drivers {
 	public void itShouldBeLoggedInSuccessfully() {
 		System.out.println("Logged in successfully");
 	}
+
+	
+	
 }
