@@ -11,7 +11,8 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 		plugin = {"pretty", "json:target/cucumber.json", 
 		"html:target/htmlreport.html"},
 		tags = "@All_Scenarios",
-		dryRun = false
+		dryRun = false,
+		monochrome = true
 
 		)
 public class RunnerClass extends AbstractTestNGCucumberTests 
