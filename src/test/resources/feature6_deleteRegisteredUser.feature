@@ -8,7 +8,6 @@ Feature: Delete Registered User from the HomePage
     When User select the UserDetails and delete
     And It Should be Redirected to HomePage Again
 
-
     Examples: 
       | Username         | Password |
       | test211@test.com | tester@1 |

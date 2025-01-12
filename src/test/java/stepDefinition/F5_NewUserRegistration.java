@@ -54,7 +54,6 @@ public class F5_NewUserRegistration extends drivers {
 	public void itShouldBeLoggedInSuccessfully() {
 		System.out.println("Logged in successfully");
 	}
-
 }
 
 

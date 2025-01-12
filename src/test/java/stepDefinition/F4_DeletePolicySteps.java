@@ -52,19 +52,6 @@ public class F4_DeletePolicySteps extends drivers {
 		WebElement cancel_btn = driver.findElement(By.xpath("//button[text()='Cancel']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", cancel_btn);
 		Thread.sleep(3000);
-
-		//		for (int i = 0; i < size; i++) {
-		//			List<WebElement> secondRow = AllRows.get(i).findElements(By.tagName("td"));
-		//			WebElement policyID = secondRow.get(1);
-		//			String text = policyID.getText();
-		//			System.out.println(text);
-		//			
-		//			if(text.equals("677ca2a2fd02909d90256c22"))
-		//			{
-		//				WebElement delete = secondRow.get(7).findElement(By.tagName("button"));
-		//				delete.click();
-		//			}
-		//		}
 	}
 
 	@And("User clicks the Yes or No")
