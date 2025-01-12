@@ -20,8 +20,9 @@ import io.cucumber.java.en.When;
 public class F6_DeleteRegUsers extends drivers {
 	
 	@Given("User should be in expleoHome page")
-	public void user_should_be_in_expleo_home_page() {
+	public void user_should_be_in_expleo_home_page() throws InterruptedException {
 		System.out.println("Entered Home Page");
+		Thread.sleep(2000);
 	}
 
 	@When("User select the UserDetails and delete")

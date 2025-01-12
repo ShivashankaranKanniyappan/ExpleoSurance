@@ -1,5 +1,6 @@
 #Author: ShivaShankaran
 
+@All_Scenarios
 @deleteUser
 Feature: Delete Registered User from the HomePage
 

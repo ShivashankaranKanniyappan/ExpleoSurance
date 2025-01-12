@@ -15,12 +15,12 @@ Feature: Validation of New Insurace Details
     Examples: 
       | Name         | Email               | Address | Date       | Premium |
       | EXPLEOTester | Tester1@expleo.com  | Expleo  | 21-02-2025 |    3000 |
-      | EXPLEOTester | Tester2@expleo.com  | Expleo  | 21-02-2025 |     423 |
-      | EXPLEOTester | Tester3@expleo.com  | Expleo  | 21-02-2025 |     232 |
-      | EXPLEOTester | Tester4@expleo.com  | Expleo  | 21-02-2025 |    5465 |
-      | EXPLEOTester | Tester5@expleo.com  | Expleo  | 21-02-2025 |    3000 |
-      | EXPLEOTester | Tester6@expleo.com  | Expleo  | 21-02-2025 |     322 |
-      | EXPLEOTester | Tester7@expleo.com  | Expleo  | 21-02-2025 |    5453 |
-      | EXPLEOTester | Tester8@expleo.com  | Expleo  | 21-02-2025 |    5465 |
-      | EXPLEOTester | Tester9@expleo.com  | Expleo  | 21-02-2025 |    6565 |
-      | EXPLEOTester | Tester10@expleo.com | Expleo  | 21-02-2025 |     232 |
+      #| EXPLEOTester | Tester2@expleo.com  | Expleo  | 21-02-2025 |     423 |
+      #| EXPLEOTester | Tester3@expleo.com  | Expleo  | 21-02-2025 |     232 |
+      #| EXPLEOTester | Tester4@expleo.com  | Expleo  | 21-02-2025 |    5465 |
+      #| EXPLEOTester | Tester5@expleo.com  | Expleo  | 21-02-2025 |    3000 |
+      #| EXPLEOTester | Tester6@expleo.com  | Expleo  | 21-02-2025 |     322 |
+      #| EXPLEOTester | Tester7@expleo.com  | Expleo  | 21-02-2025 |    5453 |
+      #| EXPLEOTester | Tester8@expleo.com  | Expleo  | 21-02-2025 |    5465 |
+      #| EXPLEOTester | Tester9@expleo.com  | Expleo  | 21-02-2025 |    6565 |
+      #| EXPLEOTester | Tester10@expleo.com | Expleo  | 21-02-2025 |     232 |

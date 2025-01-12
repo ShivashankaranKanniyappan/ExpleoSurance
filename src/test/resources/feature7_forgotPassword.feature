@@ -1,3 +1,5 @@
+#Author: ShivaShankaran
+@All_Scenarios
 Feature: Forgot password functionality
 
   Scenario Outline: Forgot password functionality
@@ -9,5 +11,4 @@ Feature: Forgot password functionality
 
     Examples: 
       | Email            | NewPassword | ConfirmPassword |
-      | test211@test.com | tester@123  | tester@123      |
-
+      | shiva@expleo.com | Shiva@19    | Shiva@19        |
