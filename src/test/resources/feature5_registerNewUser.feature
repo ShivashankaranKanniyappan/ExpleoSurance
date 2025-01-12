@@ -1,3 +1,5 @@
+#Author: ShivaShankaran
+
 @All_Scenarios
 Feature: Register New User
 
@@ -11,8 +13,6 @@ Feature: Register New User
     Examples: 
       | Email            | Password | ConfirmPassword |
       | test211@test.com | tester@1 | tester@1        |
-      | test221@test.com | tester@2 | tester@2        |
-      | test231@test.com | tester@3 | tester@2        |
 
   @registeredUser
   Scenario Outline: Validating Registered Users
@@ -23,5 +23,3 @@ Feature: Register New User
     Examples: 
       | Username         | Password |
       | test211@test.com | tester@1 |
-      | test221@test.com | tester@2 |
-      | test231@test.com | tester@3 |

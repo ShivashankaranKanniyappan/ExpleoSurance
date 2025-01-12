@@ -1,12 +1,19 @@
 package stepDefinition;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class newRegistration extends drivers {
+public class F5_NewUserRegistration extends drivers {
 
 	@Given("User Clicks the Register New Account")
 	public void user_clicks_the_register_new_account() {
@@ -32,7 +39,7 @@ public class newRegistration extends drivers {
 		System.out.println(text);
 		Thread.sleep(2000);
 	}
-	
+
 	@Given("User enters the new registered {string} and {string}")
 	public void userEntersTheNewRegisteredAnd(String Username, String Password) {
 		driver.findElement(By.name("username")).sendKeys(Username);
@@ -47,4 +54,7 @@ public class newRegistration extends drivers {
 	public void itShouldBeLoggedInSuccessfully() {
 		System.out.println("Logged in successfully");
 	}
+
 }
+
+
