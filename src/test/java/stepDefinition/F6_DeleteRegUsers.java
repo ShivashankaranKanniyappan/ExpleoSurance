@@ -41,13 +41,17 @@ public class F6_DeleteRegUsers extends drivers {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0, 16000)");
         
-        driver.findElement(By.xpath("//td[text()='test211@test.com']/following::td[2][@class='deleteButton']")).click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
-        WebElement yesButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(), 'Yes')]")));
+//        driver.findElement(By.xpath("//td[text()='test211@test.com']/following::td[2][@class='deleteButton']")).click();
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+//        WebElement yesButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(), 'Yes')]")));
   
 
+        WebElement delete_btn = driver.findElement(By.xpath("//td[text()='test211@test.com']/following::td[2][@class='deleteButton']")); //(//button[text()='Delete Policy'])[1]
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", delete_btn);
+		Thread.sleep(3000);
+        
         Actions act = new Actions(driver);
-        act.doubleClick(yesButton).build().perform();
+        act.doubleClick(delete_btn).build().perform();
         Thread.sleep(3000);
 	}
 	

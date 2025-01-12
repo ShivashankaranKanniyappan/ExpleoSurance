@@ -37,6 +37,7 @@ public class tryHere {
         
         driver.findElement(By.xpath("//td[text()='test231@test.com']/following::td[2][@class='deleteButton']")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        
         WebElement yesButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Yes']")));
         Actions act = new Actions(driver);
         act.doubleClick(yesButton).build().perform();

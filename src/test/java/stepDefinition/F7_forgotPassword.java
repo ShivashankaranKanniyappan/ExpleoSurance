@@ -38,12 +38,6 @@ public class F7_forgotPassword extends drivers {
 	public void userClicksTheResetPasswordButton() throws InterruptedException {
 		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
-        WebElement yesButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(), 'Yes')]")));
-        
-        Actions act = new Actions(driver);
-        act.doubleClick(yesButton).build().perform();
-        Thread.sleep(3000);
 	}
 
 	@Then("User should be redirected to Login page")
