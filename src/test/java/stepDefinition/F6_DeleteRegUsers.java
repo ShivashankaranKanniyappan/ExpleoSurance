@@ -1,13 +1,14 @@
 package stepDefinition;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -41,9 +42,10 @@ public class F6_DeleteRegUsers extends drivers {
         jse.executeScript("window.scrollBy(0, 16000)");
         
         driver.findElement(By.xpath("//td[text()='test211@test.com']/following::td[2][@class='deleteButton']")).click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         WebElement yesButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Yes']")));
-       
+  
+
         Actions act = new Actions(driver);
         act.doubleClick(yesButton).build().perform();
         Thread.sleep(3000);

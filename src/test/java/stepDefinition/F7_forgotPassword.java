@@ -1,8 +1,13 @@
 package stepDefinition;
 
+import java.time.Duration;
+
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
@@ -30,8 +35,15 @@ public class F7_forgotPassword extends drivers {
 	}
 
 	@When("User clicks the Reset Password button")
-	public void userClicksTheResetPasswordButton() {
+	public void userClicksTheResetPasswordButton() throws InterruptedException {
+		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+        WebElement yesButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Yes']")));
+        
+        Actions act = new Actions(driver);
+        act.doubleClick(yesButton).build().perform();
+        Thread.sleep(3000);
 	}
 
 	@Then("User should be redirected to Login page")
