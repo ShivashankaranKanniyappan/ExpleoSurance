@@ -5,37 +5,43 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F1_LoginSteps extends drivers {
-
-	@When("User Enter Username and Password")
-	public void user_enter_username_and_password() throws InterruptedException {
-
+public class F9_LoginAndGetTitle extends drivers {
+	
+	@Given("User enter valid login and password")
+	public void userEnterValidLoginAndPassword() {
 		WebElement username = driver.findElement(By.xpath("//input[@placeholder='Email Address']"));
 		username.sendKeys("shivashankaran.kanniyappan@expleogroup.com");
 		WebElement password = driver.findElement(By.xpath("//input[@placeholder='Password']"));
 		password.sendKeys("Shiva@1919");
 	}
-
-	@When("User should click the LoginButton")
-	public void user_should_click_the_login_button() throws InterruptedException {
+	@When("User clicks submit it should be redirected to Dashboard Page")
+	public void userClicksSubmitItShouldBeRedirectedToDashboardPage() throws InterruptedException {
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		Thread.sleep(3000); 
 	}
-
-	@Then("Login Should be successful")
-	public void login_should_be_successful() throws AWTException, InterruptedException {
+	@When("User should validate the Title and URL")
+	public void userShouldValidateTheTitleAndURL() {
+		WebElement title = driver.findElement(By.xpath("//p[@class='text-lg font-bold text-white']"));
+		System.out.println("******TITLE IS********"+ " " + title.getText());
 		
-		Robot robot = new Robot();
+		@Nullable
+		String currentUrl = driver.getCurrentUrl();
+		System.out.println("******Current URL******" +currentUrl);
+
+	}
+	@Then("Logout the page")
+	public void logoutThePage() throws AWTException, InterruptedException {
+	    Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_MINUS); robot.keyRelease(KeyEvent.VK_MINUS); 
         robot.keyPress(KeyEvent.VK_MINUS); robot.keyRelease(KeyEvent.VK_MINUS); 
@@ -48,6 +54,10 @@ public class F1_LoginSteps extends drivers {
         
 		Actions act = new Actions(driver);
 		act.click(logout).build().perform();
-		System.out.println("Login Successful");
+		Thread.sleep(5000);
+		@Nullable
+		String currentUrl = driver.getCurrentUrl();
+		System.out.println(currentUrl);
+		System.out.println("Logout Successful");
 	}
 }

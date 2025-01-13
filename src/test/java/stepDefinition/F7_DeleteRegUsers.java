@@ -18,7 +18,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class F6_DeleteRegUsers extends drivers {
+public class F7_DeleteRegUsers extends drivers {
 	
 	@Given("User should be in expleoHome page")
 	public void user_should_be_in_expleo_home_page() throws InterruptedException {
@@ -39,17 +39,17 @@ public class F6_DeleteRegUsers extends drivers {
         System.out.println(size);
         
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0, 16000)");
+        jse.executeScript("window.scrollBy(0, 16000)");       
         
 //        driver.findElement(By.xpath("//td[text()='test211@test.com']/following::td[2][@class='deleteButton']")).click();
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
 //        WebElement yesButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(), 'Yes')]")));
   
 
-        WebElement delete_btn = driver.findElement(By.xpath("//td[text()='test211@test.com']/following::td[2][@class='deleteButton']")); //(//button[text()='Delete Policy'])[1]
+        WebElement delete_btn = driver.findElement(By.xpath("//td[text()='test211@test.com']/following::td[2][@class='deleteButton']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", delete_btn);
 		Thread.sleep(3000);
-        
+
         Actions act = new Actions(driver);
         act.doubleClick(delete_btn).build().perform();
         Thread.sleep(3000);

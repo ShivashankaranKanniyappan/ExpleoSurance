@@ -12,8 +12,7 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 							"html:target/htmlreport.html"},
 		tags = "@All_Scenarios",
 		dryRun = false,
-		monochrome = true
-
+		monochrome = false
 		)
 public class RunnerClass extends AbstractTestNGCucumberTests 
 {

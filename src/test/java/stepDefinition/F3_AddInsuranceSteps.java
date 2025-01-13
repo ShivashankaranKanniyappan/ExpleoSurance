@@ -1,11 +1,15 @@
 package stepDefinition;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -68,10 +72,25 @@ public class F3_AddInsuranceSteps extends drivers {
 	}
 
 	@When("Page should show Insurance policy created successfully")
-	public void page_should_show_insurance_policy_created_successfully() throws InterruptedException {
+	public void page_should_show_insurance_policy_created_successfully() throws InterruptedException, AWTException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//p[normalize-space()='Insurance policy created successfully.'])[1]"));
 		System.out.println("Insurance Created Successfully");
+		
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_MINUS); robot.keyRelease(KeyEvent.VK_MINUS); 
+        robot.keyPress(KeyEvent.VK_MINUS); robot.keyRelease(KeyEvent.VK_MINUS); 
+        robot.keyPress(KeyEvent.VK_MINUS); robot.keyRelease(KeyEvent.VK_MINUS); 
+        robot.keyPress(KeyEvent.VK_MINUS); robot.keyRelease(KeyEvent.VK_MINUS); 
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+		Thread.sleep(3000);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement logout = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Logout']")));
+        
+		Actions act = new Actions(driver);
+		act.click(logout).build().perform();
+		System.out.println("Login Successful");
 	}
 
 

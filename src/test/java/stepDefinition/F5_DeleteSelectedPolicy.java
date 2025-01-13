@@ -1,20 +1,23 @@
 package stepDefinition;
 
+import java.time.Duration;
 import java.util.List;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F4_DeletePolicySteps extends drivers {
+public class F5_DeleteSelectedPolicy extends drivers {
 
-	@Given("User should be logged in successfully")
-	public void user_should_be_logged_in_successfully() throws InterruptedException {
 
+	@Given("User should be in Login Page")
+	public void userShouldBeInLoginPage() throws InterruptedException {
 		WebElement username = driver.findElement(By.xpath("//input[@placeholder='Email Address']"));
 		username.sendKeys("shivashankaran.kanniyappan@expleogroup.com");
 		WebElement password = driver.findElement(By.xpath("//input[@placeholder='Password']"));
@@ -23,8 +26,10 @@ public class F4_DeletePolicySteps extends drivers {
 		Thread.sleep(2000);
 	}
 
-	@When("User clicks the delete button")
-	public void user_clicks_the_delete_button() throws InterruptedException {
+	@When("User Select the account using AccountName for delete")
+	public void user_select_the_account_using_account_name_for_delete() throws InterruptedException {
+
+		// Table Header 
 		WebElement table = driver.findElement(By.xpath("//div[@class='insuranceTable']"));
 		List<WebElement> headers = table.findElements(By.tagName("th"));
 		for (WebElement header : headers) 
@@ -33,34 +38,29 @@ public class F4_DeletePolicySteps extends drivers {
 			System.out.println("Headers: "+text); 
 		}
 
-
-		List<WebElement> AllRows = table.findElements(By.cssSelector("tbody tr"));
-		int size = AllRows.size();
-		System.out.println("Total Number of Rows: "+ size);
-
-		for (WebElement row : AllRows) {
-			WebElement columns = row.findElement(By.tagName("td"));
-			String text = columns.getText();
-			System.out.println("All rows first column: "+text);
-		}
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0, 6000)");
 
 		WebElement delete_btn = driver.findElement(By.xpath("//tbody/tr[1]/td[8]/button")); //(//button[text()='Delete Policy'])[1]
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", delete_btn);
 		Thread.sleep(3000);
 
+		Actions act = new Actions(driver);
+		act.doubleClick(delete_btn).build().perform();
 		Thread.sleep(3000);
-		WebElement cancel_btn = driver.findElement(By.xpath("//button[text()='Cancel']"));
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", cancel_btn);
-		Thread.sleep(3000);
+
 	}
 
-	@And("User clicks the Yes or No")
-	public void user_clicks_the_yes_or_no() {
-			
+	@And("User clicks the delete button one by one")
+	public void user_clicks_the_delete_button_one_by_one() throws InterruptedException {
+
+
 	}
 
-	@Then("Insurance entry should be deleted in the dashboard page")
-	public void insurance_entry_should_be_deleted_in_the_dashboard_page() {
+	@Then("Account should be deleted")
+	public void account_should_be_deleted() {
 		System.out.println("Policy Deleted");
 	}
+
+
 }

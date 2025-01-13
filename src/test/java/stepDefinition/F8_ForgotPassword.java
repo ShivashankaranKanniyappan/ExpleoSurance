@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F7_forgotPassword extends drivers {
+public class F8_ForgotPassword extends drivers {
 
 	@Given("User should be in the given URL")
 	public void user_should_be_in_the_given_url() {
