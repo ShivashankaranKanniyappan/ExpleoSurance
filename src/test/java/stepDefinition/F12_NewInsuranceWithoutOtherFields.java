@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F93_NewInsuranceWithoutOtherFields extends drivers {
+public class F12_NewInsuranceWithoutOtherFields extends drivers {
 
 	@When("User filled all the fields without Address")
 	public void user_filled_all_the_fields_without_address() throws InterruptedException {

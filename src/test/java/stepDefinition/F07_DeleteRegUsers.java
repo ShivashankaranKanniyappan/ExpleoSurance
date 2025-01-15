@@ -18,7 +18,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class F7_DeleteRegUsers extends drivers {
+public class F07_DeleteRegUsers extends drivers {
 	
 	@Given("User should be in expleoHome page")
 	public void user_should_be_in_expleo_home_page() throws InterruptedException {

@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F1_LoginSteps extends drivers {
+public class F01_LoginSteps extends drivers {
 
 	@When("User Enter Username and Password")
 	public void user_enter_username_and_password() throws InterruptedException {

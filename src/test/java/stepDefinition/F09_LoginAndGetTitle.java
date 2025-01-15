@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F9_LoginAndGetTitle extends drivers {
+public class F09_LoginAndGetTitle extends drivers {
 	
 	@Given("User enter valid login and password")
 	public void userEnterValidLoginAndPassword() {

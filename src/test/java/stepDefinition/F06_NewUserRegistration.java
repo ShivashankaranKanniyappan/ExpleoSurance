@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F6_NewUserRegistration extends drivers {
+public class F06_NewUserRegistration extends drivers {
 
 	@Given("User Clicks the Register New Account")
 	public void user_clicks_the_register_new_account() {

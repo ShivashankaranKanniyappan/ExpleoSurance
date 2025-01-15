@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F4_DeleteRandomPolicy extends drivers {
+public class F04_DeleteRandomPolicy extends drivers {
 
 	@Given("User should be logged in successfully")
 	public void user_should_be_logged_in_successfully() throws InterruptedException {

@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F5_DeleteSelectedPolicy extends drivers {
+public class F05_DeleteSelectedPolicy extends drivers {
 
 
 	@Given("User should be in Login Page")
