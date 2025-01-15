@@ -31,8 +31,6 @@ public class F93_NewInsuranceWithoutOtherFields extends drivers {
 		Select select3 = new Select(selectSumInsured);
 		select3.selectByIndex(3);
 		driver.findElement(By.id("Premium")).sendKeys("322");
-		WebElement Premium = driver.findElement(By.id("Premium"));
-		Premium.sendKeys("3221"); 
 	}
 
 	@Then("It should show the error msg Address is Required")
@@ -62,8 +60,6 @@ public class F93_NewInsuranceWithoutOtherFields extends drivers {
 		Select select3 = new Select(selectSumInsured);
 		select3.selectByIndex(3);
 		driver.findElement(By.id("Premium")).sendKeys("322");
-		WebElement Premium = driver.findElement(By.id("Premium"));
-		Premium.sendKeys("3221");
 	}
 
 	@Then("It should show the error msg DOB is Required")
@@ -93,9 +89,7 @@ public class F93_NewInsuranceWithoutOtherFields extends drivers {
 		WebElement selectSumInsured = driver.findElement(By.name("SumInsured"));
 		Select select3 = new Select(selectSumInsured);
 		select3.selectByIndex(3);
-		driver.findElement(By.id("Premium")).sendKeys("322");
-		WebElement Premium = driver.findElement(By.id("Premium"));
-		Premium.sendKeys("3221");   
+		driver.findElement(By.id("Premium")).sendKeys("322");  
 	}
 
 	@Then("It should show the error msg Gender is Required")
@@ -124,10 +118,7 @@ public class F93_NewInsuranceWithoutOtherFields extends drivers {
 		WebElement selectSumInsured = driver.findElement(By.name("SumInsured"));
 		Select select3 = new Select(selectSumInsured);
 		select3.selectByIndex(3);
-		driver.findElement(By.id("Premium")).sendKeys("322");
-		WebElement Premium = driver.findElement(By.id("Premium"));
-		Premium.sendKeys("3221");
-	       
+		driver.findElement(By.id("Premium")).sendKeys("322");	       
 	}
 
 	@Then("It should show the error msg Please select at least one Policy Type")
@@ -157,9 +148,7 @@ public class F93_NewInsuranceWithoutOtherFields extends drivers {
 //		WebElement selectSumInsured = driver.findElement(By.name("SumInsured"));
 //		Select select3 = new Select(selectSumInsured);
 //		select3.selectByIndex(3);
-		driver.findElement(By.id("Premium")).sendKeys("322");
-		WebElement Premium = driver.findElement(By.id("Premium"));
-		Premium.sendKeys("3221");     
+		driver.findElement(By.id("Premium")).sendKeys("322"); 
 	}
 
 	@Then("It should show the error msg Please select Sum Insured")
@@ -174,7 +163,7 @@ public class F93_NewInsuranceWithoutOtherFields extends drivers {
 	@When("User filled all the fields without Premium")
 	public void user_filled_all_the_fields_without_premium() throws InterruptedException {
 		driver.findElement(By.id("Name")).sendKeys("shiva");
-		driver.findElement(By.id("email")).sendKeys("shiva@expleo ");
+		driver.findElement(By.id("email")).sendKeys("shiva@expleo.com");
 		driver.findElement(By.id("Address")).sendKeys("Expleo");
 		driver.findElement(By.id("DateOfBirth")).sendKeys("12/12/1992");
 		driver.findElement(By.xpath("//label[normalize-space()='Male']")).click();
@@ -188,9 +177,7 @@ public class F93_NewInsuranceWithoutOtherFields extends drivers {
 		WebElement selectSumInsured = driver.findElement(By.name("SumInsured"));
 		Select select3 = new Select(selectSumInsured);
 		select3.selectByIndex(3);
-		driver.findElement(By.id("Premium")).sendKeys("322");		
-		WebElement Premium = driver.findElement(By.id("Premium"));
-		Premium.sendKeys(" "); 
+		driver.findElement(By.id("Premium")).sendKeys(" ");
 	}
 
 	@Then("It should show the error msg Please select Premium")
