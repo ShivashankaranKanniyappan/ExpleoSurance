@@ -30,6 +30,7 @@ public class F01_LoginSteps extends drivers {
 	public void user_should_click_the_login_button() throws InterruptedException {
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		Thread.sleep(3000); 
+		System.out.println("Login Successful");
 	}
 
 	@Then("Login Should be successful")
@@ -48,6 +49,6 @@ public class F01_LoginSteps extends drivers {
         
 		Actions act = new Actions(driver);
 		act.click(logout).build().perform();
-		System.out.println("Login Successful");
+		System.out.println("LogOut Successful");
 	}
 }
