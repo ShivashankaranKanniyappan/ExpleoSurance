@@ -12,7 +12,7 @@ import baseClass_Shiva.BaseClass;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F13_PaymentPage extends BaseClass {
+public class F18_PaymentPage extends BaseClass {
 
 	@When("selecting Payment Page")
 	public void selecting_payment_page() {

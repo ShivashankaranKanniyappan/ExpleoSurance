@@ -1,7 +1,6 @@
-#Author: ShivaShankaran
-
 @All_Scenarios
-Feature: Register New User
+Feature: ES06_Register New User
+  Author: ShivaShankaran
 
   @newUser
   Scenario Outline: Validating New User Registration

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F10_NewInsuranceFielsWithoutName extends drivers {
+public class F10_WithoutName extends drivers {
 	
 	@Given("User should be in login Page for field validating")
 	public void user_should_be_in_login_page_for_field_validating() throws InterruptedException {

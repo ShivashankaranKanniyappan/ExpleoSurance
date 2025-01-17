@@ -1,6 +1,6 @@
-#Author: ShivaShankaran
 @All_Scenarios
-Feature: New Insurance Fields - Email
+Feature: ES11_New Insurance Fields - Email
+  Author: ShivaShankaran
 
   Scenario: Validation all fields of New Insurace without Email
     Given User is in LoginPage

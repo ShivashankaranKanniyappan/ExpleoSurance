@@ -1,8 +1,6 @@
-#Author: ShivaShankaran
-
 @All_Scenarios
-@deleteUser
-Feature: Delete Registered User from the HomePage
+Feature: ES07_Delete Registered User from the HomePage
+  Author: ShivaShankaran
 
   Scenario Outline: Delete Registered Users
     Given User should be in expleoHome page

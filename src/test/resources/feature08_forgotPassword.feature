@@ -1,6 +1,6 @@
-#Author: ShivaShankaran
 @All_Scenarios
-Feature: Forgot password functionality
+Feature: ES08_Forgot password functionality
+  Author: ShivaShankaran
 
   Scenario Outline: Forgot password functionality
     Given User should be in the given URL

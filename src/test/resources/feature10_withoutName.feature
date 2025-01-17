@@ -1,6 +1,6 @@
-#Author: ShivaShankaran
 @All_Scenarios
-Feature: New Insurance Fields - Name
+Feature: ES10_New Insurance Fields - Name
+  Author: ShivaShankaran
 
   Scenario: Validation of New Insurance Fields without Name
     Given User should be in login Page for field validating

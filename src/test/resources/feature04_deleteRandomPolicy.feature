@@ -1,7 +1,6 @@
-#Author: ShivaShankaran
-
 @All_Scenarios
-Feature: Validation of deleting Existing insurance
+Feature: ES04_Validation of deleting Existing insurance
+  Author: ShivaShankaran
 
   Scenario: Validation of deleting insurance details in dashboard
     Given User should be logged in successfully

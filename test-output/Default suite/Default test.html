@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>28/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 17 11:09:42 IST 2025</td>
+<td>Started on:</td><td>Fri Jan 17 15:20:33 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>297 seconds (297392 ms)</td>
+<tr><td>Total time:</td><td>297 seconds (297922 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,71 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete Registered Users", "ES07_Delete Registered User from the HomePage"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;mt-0 border-2 border-white w-max &apos;]&quot;}
+  (Session info: chrome=132.0.6834.83)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [587b1b7f35dfc3ab68a57033f7db4971, findElement {value=//table[@class=&apos;mt-0 border-2 border-white w-max &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\SKANNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52111/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 587b1b7f35dfc3ab68a57033f7db4971
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDefinition.F07_DeleteRegUsers.userSelectTheUserDetailsAndDelete(F07_DeleteRegUsers.java:32)
+	at ✽.User select the UserDetails and delete(file:///C:/Users/skanniyappan/git/ExpleoSurance/src/test/resources/feature07_deleteRegUsers.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1072611228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1072611228'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;mt-0 border-2 border-white w-max &apos;]&quot;}
+  (Session info: chrome=132.0.6834.83)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [587b1b7f35dfc3ab68a57033f7db4971, findElement {value=//table[@class=&apos;mt-0 border-2 border-white w-max &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\SKANNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52111/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 587b1b7f35dfc3ab68a57033f7db4971
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDefinition.F07_DeleteRegUsers.userSelectTheUserDetailsAndDelete(F07_DeleteRegUsers.java:32)
+	at ✽.User select the UserDetails and delete(file:///C:/Users/skanniyappan/git/ExpleoSurance/src/test/resources/feature07_deleteRegUsers.feature:7)
+</pre></div></td>
+<td>6</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,142 +141,137 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Empty credentials", "Invalid login Credentials validation"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Address", "New Insurance Fields - Address"</td>
-<td></td>
-<td>12</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "Validation of New Insurace Details"</td>
-<td></td>
-<td>18</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "Validation of New Insurace Details"</td>
-<td></td>
-<td>18</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Title and Current URL", "Get Title and Current URL"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Title and Current URL", "ES09_Get Title and Current URL"</td>
 <td></td>
 <td>14</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete Registered Users", "Delete Registered User from the HomePage"</td>
-<td></td>
-<td>7</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of invalid credentials", "Invalid login Credentials validation"</td>
-<td></td>
-<td>4</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Vaildating multiple delete account created in New Insurance", "Delete Selected Account Created in New Insurace"</td>
-<td></td>
-<td>9</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Registered Users", "Register New User"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Empty credentials", "ES02_Invalid login Credentials validation for Expleosurance"</td>
 <td></td>
 <td>3</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Email", "New Insurance Fields - Email"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "ES03_Validation of New Insurace Details"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Empty credentials", "ES02_Invalid login Credentials validation for Expleosurance"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password functionality", "ES08_Forgot password functionality"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "ES03_Validation of New Insurace Details"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Registered Users", "ES06_Register New User"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Login using valid credentials", "ES01_Validating Login credentials for ExpleoSurance"</td>
+<td></td>
+<td>9</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Vaildation of deleting the newly created in New Insurance", "ES05_Delete Selected Account Created in New Insurace"</td>
+<td></td>
+<td>9</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "ES03_Validation of New Insurace Details"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "ES03_Validation of New Insurace Details"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of invalid credentials", "ES02_Invalid login Credentials validation for Expleosurance"</td>
+<td></td>
+<td>4</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of invalid credentials", "ES02_Invalid login Credentials validation for Expleosurance"</td>
+<td></td>
+<td>4</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of invalid credentials", "ES02_Invalid login Credentials validation for Expleosurance"</td>
+<td></td>
+<td>4</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of New Insurance Fields without Name", "ES10_New Insurance Fields - Name"</td>
+<td></td>
+<td>19</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Gender", "ES14_New Insurance Fields - Gender"</td>
+<td></td>
+<td>9</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without PolicyType", "ES15_New Insurance Fields - PolicyType"</td>
+<td></td>
+<td>11</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Address", "ES12_New Insurance Fields - Address"</td>
 <td></td>
 <td>13</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "Validation of New Insurace Details"</td>
-<td></td>
-<td>18</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without SumInsured", "New Insurance Fields - Address"</td>
-<td></td>
-<td>11</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Empty credentials", "Invalid login Credentials validation"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Empty credentials", "ES02_Invalid login Credentials validation for Expleosurance"</td>
 <td></td>
 <td>3</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of New Insurance Fields without Name", "New Insurance Fields - Name"</td>
-<td></td>
-<td>18</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of invalid credentials", "Invalid login Credentials validation"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Premium", "New Insurance Fields - Address"</td>
-<td></td>
-<td>11</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password functionality", "Forgot password functionality"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Empty credentials", "Invalid login Credentials validation"</td>
-<td></td>
-<td>4</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without PolicyType", "New Insurance Fields - Address"</td>
-<td></td>
-<td>11</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Gender", "New Insurance Fields - Address"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of deleting insurance details in dashboard", "ES04_Validation of deleting Existing insurance"</td>
 <td></td>
 <td>8</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without DOB", "New Insurance Fields - Address"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Email", "ES11_New Insurance Fields - Email"</td>
+<td></td>
+<td>13</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without SumInsured", "ES16_New Insurance Fields - SumInsured"</td>
+<td></td>
+<td>12</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without Premium", "ES17_New Insurance Fields - Premium"</td>
+<td></td>
+<td>13</td>
+<td>testRunner.RunnerClass@4e50c791</td></tr>
+<tr>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "ES18_Validation all fields of New Insurace without Premium", "New Insurance Fields - Premium"</td>
 <td></td>
 <td>11</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of invalid credentials", "Invalid login Credentials validation"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation all fields of New Insurace without DOB", "ES13_New Insurance Fields - DOB"</td>
 <td></td>
-<td>3</td>
+<td>13</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "Validation of New Insurace Details"</td>
-<td></td>
-<td>17</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating New User Registration", "Register New User"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating New User Registration", "ES06_Register New User"</td>
 <td></td>
 <td>7</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>
 <tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "Validation of New Insurace Details"</td>
-<td></td>
-<td>18</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of deleting insurance details in dashboard", "Validation of deleting Existing insurance"</td>
-<td></td>
-<td>8</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Login using valid credentials", "Validating Login credentials for ExpleoSurance"</td>
-<td></td>
-<td>9</td>
-<td>testRunner.RunnerClass@4e50c791</td></tr>
-<tr>
-<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating payemnts page", "Payment Page Validation"</td>
+<td title='testRunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Adding New Insurance", "ES03_Validation of New Insurace Details"</td>
 <td></td>
 <td>18</td>
 <td>testRunner.RunnerClass@4e50c791</td></tr>

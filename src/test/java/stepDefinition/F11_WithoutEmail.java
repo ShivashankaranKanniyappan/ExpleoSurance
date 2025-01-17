@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
 
-public class F11_NewInsuraceFields extends drivers {
+public class F11_WithoutEmail extends drivers {
 
 	@Given("User is in LoginPage")
 	public void user_is_in_login_page() throws InterruptedException {
