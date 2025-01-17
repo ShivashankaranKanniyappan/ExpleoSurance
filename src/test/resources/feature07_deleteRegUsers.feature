@@ -1,4 +1,5 @@
 @All_Scenarios
+@deleteUser
 Feature: ES07_Delete Registered User from the HomePage
   Author: ShivaShankaran
 
