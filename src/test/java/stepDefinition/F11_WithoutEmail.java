@@ -49,7 +49,6 @@ public class F11_WithoutEmail extends drivers {
 		Select select3 = new Select(selectSumInsured);
 		select3.selectByIndex(3);
 		driver.findElement(By.id("Premium")).sendKeys("322");
-
 	}
 
 	@Then("It should show the error msg and then Logout")
@@ -57,14 +56,9 @@ public class F11_WithoutEmail extends drivers {
 		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']"))).click();
-		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		String text = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[normalize-space()='*Email is required']"))).getText();
 		System.out.println(text);
-		
-		
-		
-		
 	}
 
 }
