@@ -38,29 +38,22 @@ public class F05_DeleteSelectedPolicy extends drivers {
 			System.out.println("Headers: "+text); 
 		}
 
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0, 6000)");
-
 		WebElement delete_btn = driver.findElement(By.xpath("//tbody/tr[1]/td[8]/button")); //(//button[text()='Delete Policy'])[1]
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", delete_btn);
-		Thread.sleep(3000);
-
+		Thread.sleep(1000);
 		Actions act = new Actions(driver);
 		act.doubleClick(delete_btn).build().perform();
 		Thread.sleep(3000);
-
 	}
 
 	@And("User clicks the delete button one by one")
 	public void user_clicks_the_delete_button_one_by_one() throws InterruptedException {
-
-
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Yes']"))).click();
 	}
 
 	@Then("Account should be deleted")
 	public void account_should_be_deleted() {
 		System.out.println("Policy Deleted");
 	}
-
-
 }

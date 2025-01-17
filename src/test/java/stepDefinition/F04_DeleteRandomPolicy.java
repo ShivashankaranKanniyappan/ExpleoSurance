@@ -1,11 +1,14 @@
 package stepDefinition;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverInstance.drivers;
 import io.cucumber.java.en.*;
@@ -47,16 +50,12 @@ public class F04_DeleteRandomPolicy extends drivers {
 		WebElement delete_btn = driver.findElement(By.xpath("//tbody/tr[1]/td[8]/button")); //(//button[text()='Delete Policy'])[1]
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", delete_btn);
 		Thread.sleep(3000);
-
-		Thread.sleep(3000);
-		WebElement cancel_btn = driver.findElement(By.xpath("//button[text()='Cancel']"));
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", cancel_btn);
-		Thread.sleep(3000);
 	}
 
 	@And("User clicks the Yes or No")
 	public void user_clicks_the_yes_or_no() {
-			
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Yes']"))).click();
 	}
 
 	@Then("Insurance entry should be deleted in the dashboard page")

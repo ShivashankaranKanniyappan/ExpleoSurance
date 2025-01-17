@@ -1,6 +1,6 @@
 #Author: ShivaShankaran
 @All_Scenarios
-Feature: Delete Multiple Accounts Created in New Insurace
+Feature: Delete Selected Account Created in New Insurace
   I want to use this template for my feature file
 
   Scenario: Vaildating multiple delete account created in New Insurance

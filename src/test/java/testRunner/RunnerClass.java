@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 		snippets = SnippetType.CAMELCASE, 
 		plugin = {"pretty", "json:target/cucumber.json", 
 							"html:target/htmlreport.html"},
-		tags = "@All_Scenarios",
+		// tags = "@All_Scenarios",
 		dryRun = false,
 		monochrome = false
 		)
