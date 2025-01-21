@@ -50,7 +50,6 @@ public class BaseClass extends drivers {
 		System.out.println("User is on Login Page: "+title);
 	}
 
-
 	public WebElement findElementID(String ID)
 	{
 		WebElement elementID = driver.findElement(By.id(ID));
@@ -83,8 +82,6 @@ public class BaseClass extends drivers {
 	{
 		element.sendKeys(keys);
 	}
-
-
 
 	// ********FRAMES*********************//
 	public void frameByElement(WebElement frameElement) {
