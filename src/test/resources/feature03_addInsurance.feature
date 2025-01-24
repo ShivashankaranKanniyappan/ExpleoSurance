@@ -16,5 +16,3 @@ Feature: ES03_Validation of New Insurace Details
       | EXPLEOTester | Tester1@expleo.com | Expleo  | 21-02-2025 |    3000 |
       | EXPLEOTester | Tester2@expleo.com | Expleo  | 21-02-2025 |     423 |
       | EXPLEOTester | Tester3@expleo.com | Expleo  | 21-02-2025 |     232 |
-      | EXPLEOTester | Tester4@expleo.com | Expleo  | 21-02-2025 |    5465 |
-      | EXPLEOTester | Tester5@expleo.com | Expleo  | 21-02-2025 |    3000 |
