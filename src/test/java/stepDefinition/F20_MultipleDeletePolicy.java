@@ -38,30 +38,27 @@ public class F20_MultipleDeletePolicy extends drivers {
 			System.out.println(text);
 		}
 
-		while (true) {
-		    List<WebElement> delete_btn = new WebDriverWait(driver, Duration.ofSeconds(50))
-		            .until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//td[text()='EXPLEOTester']/following::td[5][@class='deleteButton']")));
+		List<WebElement> delete_btn = new WebDriverWait(driver, Duration.ofSeconds(50))
+				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//td[text()='EXPLEOTester']/following::td[5][@class='deleteButton']")));
 
-		    WebElement delete = delete_btn.get(0); // Always pick the first delete button
-		    Actions act = new Actions(driver);
-		    act.click(delete).build().perform();
-		    
-		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-		    WebElement ClickYes = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Yes']")));
-		    ClickYes.click();
-		    
-		    Thread.sleep(2000); // Optional: Replace this with a more dynamic wait if needed
-		    System.out.println("Policy Deleted Successfully");
-		    
-		    List<WebElement> row = driver.findElements(By.xpath("//td[text()='EXPLEOTester']"));
-		    if (row.isEmpty()) { // Check if the list is empty
-		        System.out.println("No Policy found for EXPLEOTester");
-		    } else {
-		        System.out.println("Found " + row.size() + " policy(s) for EXPLEOTester");
-		        driver.quit();
-		    }
+		WebElement delete = delete_btn.get(0); // Always pick the first delete button
+		Actions act = new Actions(driver);
+		act.click(delete).build().perform();
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebElement ClickYes = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Yes']")));
+		ClickYes.click();
+		System.out.println("Policy Deleted Successfully");
+
+		List<WebElement> row = driver.findElements(By.xpath("//td[text()='EXPLEOTester']"));
+		if (row.isEmpty()) { // Check if the list is empty
+			System.out.println("No Policy found for EXPLEOTester");
+		} else {
+			System.out.println("Found " + row.size() + " policy(s) for EXPLEOTester");
+			driver.quit();
 		}
 	}
+	
 	@Then("Page should be logged out")
 	public void pageShouldBeLoggedOut() throws AWTException, InterruptedException {
 
